@@ -9,9 +9,9 @@ dict={}
 class Flip_coin_simulator:
     #Checking head or tail
     def coin_flip(self,no_of_time_flip,no_of_coin):
-        for i in range(0,no_of_time_flip):
+        for index1 in range(0,no_of_time_flip):
             coin_side=""
-            for j in range(0,no_of_coin):
+            for index2 in range(0,no_of_coin):
                 random_no=random.randint(0,1)
                 if random_no == HEAD:
                     coin_side=coin_side+"H"
@@ -28,6 +28,3 @@ try:
 except ValueError:
     print("Invalid value")
 flip_coin_simulator.coin_flip(no_of_time_flip,no_of_coin)
-
-
-
