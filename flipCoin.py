@@ -14,7 +14,6 @@ class Flip_coin_simulator:
     #Checking head or tail
     def coin_flip(self,no_of_time_flip,no_of_coin):
         HEAD=0
-        global TAIL
         list_of_side=[]
         for index1 in range(0,no_of_time_flip):
             coin_side=""
@@ -41,4 +40,3 @@ class Flip_coin_simulator:
 flip_coin_simulator=Flip_coin_simulator()
 flip_coin_simulator.take_user_input()
 flip_coin_simulator.coin_flip(no_of_time_flip,no_of_coin)
-
